@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create twelve equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 8.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+/* Responsive layout - makes the twelve columns stack on top of each other instead of next to each other */
+/* @media (max-width: 1200px) {
+    .column {
+        width: 6.25%;
+    }
+} */
+@media (max-width: 992px) {
+    .column {
+        width: 12.5%;
+    }
+}
+@media (max-width: 768px) {
+    .column {
+        width: 33.33%;
+    }
+}
+@media (max-width: 480px) {
+    .column {
+        width: 50%;
+    }
+}
+@media (max-width: 320px) {
+    .column {
+        width: 100%;
+    }
+}
